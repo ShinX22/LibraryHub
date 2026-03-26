@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { BookOpen } from "lucide-react";
 import collegeLogo from "@/assets/college-logo.png";
 import UploadNotesModal from "@/components/UploadNotesModal";
+import Footer from "@/components/Footer";
 
 /**
  * HOME PAGE — matches Courses page design system.
@@ -26,7 +27,7 @@ const Index = () => {
       <main style={{
         position: "relative",
         zIndex: 1,
-        minHeight: "100dvh",
+        flex: 1,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -67,7 +68,7 @@ const Index = () => {
           animation: "fadeUp .5s .08s ease both",
         }}>
           <span style={{ width: "28px", height: "2px", background: "var(--teal)", borderRadius: "2px", display: "block" }} />
-          <span>Digital Library</span>
+          <span>KCET Digital Library</span>
           <span style={{ width: "28px", height: "2px", background: "var(--teal)", borderRadius: "2px", display: "block" }} />
         </div>
 
@@ -99,7 +100,8 @@ const Index = () => {
             rel="noopener noreferrer"
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            Developed By KCET' Students
+            Student Resource Platform
+            {/* Official KCET Student Resource Platform */}
           </a>
         </div>
 
@@ -197,6 +199,7 @@ const Index = () => {
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)} 
       />
+      <Footer />
     </div>
   );
 };

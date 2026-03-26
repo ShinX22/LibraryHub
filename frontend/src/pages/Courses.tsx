@@ -2,6 +2,7 @@ import { STATIC_COURSES } from "@/services/api";
 import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CourseCard from "@/components/CourseCard";
+import Footer from "@/components/Footer";
 
 /**
  * COURSE SELECTION PAGE
@@ -101,6 +102,8 @@ const Courses = () => {
 
       </main>
 
+      <Footer />
+
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap');
 
@@ -119,6 +122,8 @@ const Courses = () => {
           --card-hover:  0 8px 30px rgba(42,107,107,.12), 0 2px 8px rgba(0,0,0,.04);
 
           position: relative;
+          display: flex;
+          flex-direction: column;
           min-height: 100dvh;
           background: var(--sand);
           color: var(--ink);
@@ -201,6 +206,10 @@ const Courses = () => {
         .courses-main {
           position: relative;
           z-index: 1;
+          flex: 1;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
           max-width: 1340px;
           margin: 0 auto;
           padding: clamp(1.75rem, 4vw, 2.5rem) clamp(1.5rem, 5vw, 3rem) 7rem;

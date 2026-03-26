@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import NoteCard from "@/components/NoteCard";
+import Footer from "@/components/Footer";
 import { searchNotes } from "@/services/api";
 import type { Note } from "@/types/api";
 
@@ -58,7 +59,7 @@ const SearchPage = () => {
 
       <Header />
 
-      <main className="page-main">
+      <main className="page-main" style={{ flex: 1, width: "100%" }}>
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Search" }]} />
 
         {/* Hero */}
@@ -232,6 +233,7 @@ const SearchPage = () => {
           </div>
         )}
       </main>
+      <Footer />
     </div>
   );
 };

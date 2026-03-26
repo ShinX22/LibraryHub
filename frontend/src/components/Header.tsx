@@ -17,7 +17,8 @@ const Header = () => {
           position: "sticky",
           top: "10px",
           zIndex: 100,
-          maxWidth: "1340px",
+          minWidth: "90vw",
+          maxWidth: "95vw",
           margin: "0 auto",
           borderRadius: "16px",
           border: "1px solid rgba(255,255,255,.35)",
@@ -42,6 +43,7 @@ const Header = () => {
                 whiteSpace: "nowrap",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
+                textWrap: "wrap",
               }}>
                 Khalsa College Of Engineering &amp; Technology
               </span>
@@ -51,7 +53,7 @@ const Header = () => {
                 color: "var(--stone-dark)",
                 fontFamily: "'DM Sans', sans-serif",
               }}>
-                College Digital Library
+                KCET Digital Library
               </span>
             </div>
           </Link>

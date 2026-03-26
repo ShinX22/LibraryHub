@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import { getNotes, getPyqs, STATIC_DEPARTMENTS } from "@/services/api";
 import NoteCard from "@/components/NoteCard";
+import Footer from "@/components/Footer";
 import type { Note, PYQ } from "@/types/api";
 
 /**
@@ -315,6 +316,7 @@ const Notes = () => {
           )}
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
